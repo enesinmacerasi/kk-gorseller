@@ -1,0 +1,8 @@
+{
+  "posts": [
+    {"cocktail": "Moscow Mule", "palette": "bordo", "folder": "moscow-mule/v10", "slot": "2026-11-27 19:46 (paylaşıldı)", "buffer_id": "6b09968ab83ec61257d5a6cf"},
+    {"cocktail": "Negroni", "palette": "komur", "folder": "negroni/v4", "slot": "2026-11-28 12:30", "buffer_id": "6b09a527b83ec61257dd0ace"}
+  ],
+  "next_palette": "bordo",
+  "queue_ideas": ["Margarita", "Old Fashioned", "Mojito", "Espresso Martini", "Aperol Spritz", "Daiquiri", "Whiskey Sour", "Martini", "Manhattan", "Paloma", "Cosmopolitan", "Mai Tai", "Pina Colada", "French 75", "Bloody Mary", "Tom Collins", "Sazerac", "Gimlet", "Caipirinha", "Boulevardier"]
+}
