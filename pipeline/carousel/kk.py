@@ -195,7 +195,7 @@ def render(pal, prefix):
     # 8 books / coming soon
     P = PP(8)
     img = bg(P, 8); header(img, P, 8)
-    big_stack(img, P, ["E-KİTAPLAR", "LİNK BİO'DA"], 150 * S, 140, {1})
+    big_stack(img, P, ["E-KİTAPLARIN LİNKİ", "PROFİL AÇIKLAMASINDA"], 150 * S, 104, {1})
 
     def mkbook(path, w_, spine):
         cv = Image.open(path).convert("RGBA")
@@ -212,7 +212,7 @@ def render(pal, prefix):
         ImageDraw.Draw(sh).rectangle((bx + 26 * S, by + 36 * S, bx + bk.width, by + bk.height + 8 * S), fill=190)
         img.paste(P["shadow"] + (255,), mask=sh.filter(ImageFilter.GaussianBlur(24 * S)))
         img.alpha_composite(bk, (bx, by))
-    body(img, P, [("Ölçüler, yapılış, bar sırları ve evde kokteyl rehberi:", 0), ("link bio'da.", 1)], 1150 * S, 48)
+    body(img, P, [("Ölçüler, yapılış, bar sırları ve evde kokteyl rehberi:", 0), ("shopier.com/konusankokteyller", 1)], 1150 * S, 48)
     save(img, f"{prefix}_08.jpg")
 
 

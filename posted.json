@@ -11,7 +11,7 @@
     {
       "cocktail": "Negroni",
       "palette": "komur",
-      "folder": "negroni/v5",
+      "folder": "negroni/v6",
       "slot": "2026-11-27 22:00",
       "buffer_id": "6b09a527b83ec61257dd0ace",
       "series_no": 2
@@ -19,7 +19,7 @@
     {
       "cocktail": "Margarita",
       "palette": "bordo",
-      "folder": "margarita/v2",
+      "folder": "margarita/v3",
       "slot": "2026-11-28 12:30",
       "script": "pipeline/carousel/margarita.py",
       "series_no": 3
