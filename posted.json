@@ -5,21 +5,24 @@
       "palette": "bordo",
       "folder": "moscow-mule/v10",
       "slot": "2026-11-27 19:46 (paylaşıldı)",
-      "buffer_id": "6b09968ab83ec61257d5a6cf"
+      "buffer_id": "6b09968ab83ec61257d5a6cf",
+      "series_no": 1
     },
     {
       "cocktail": "Negroni",
       "palette": "komur",
-      "folder": "negroni/v4",
+      "folder": "negroni/v5",
       "slot": "2026-11-27 22:00",
-      "buffer_id": "6b09a527b83ec61257dd0ace"
+      "buffer_id": "6b09a527b83ec61257dd0ace",
+      "series_no": 2
     },
     {
       "cocktail": "Margarita",
       "palette": "bordo",
-      "folder": "margarita/v1",
+      "folder": "margarita/v2",
       "slot": "2026-11-28 12:30",
-      "script": "pipeline/carousel/margarita.py"
+      "script": "pipeline/carousel/margarita.py",
+      "series_no": 3
     }
   ],
   "next_palette": "komur",
@@ -45,5 +48,6 @@
     "Boulevardier"
   ],
   "questions_asked": [],
-  "notes": "margarita.py bordo palet örneği; negroni.py kömür palet örneği. Yeni kokteyl için paletine uygun olanı şablon al."
+  "notes": "Kapak kuralı: konuşma balonlu kapak. Örnekler: pipeline/carousel/ng_cover.py (kömür), mg_cover.py (bordo). Gövde sayfaları: negroni.py (kömür), margarita.py (bordo).",
+  "next_series_no": 4
 }
