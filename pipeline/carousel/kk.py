@@ -212,6 +212,20 @@ def render(pal, prefix):
         ImageDraw.Draw(sh).rectangle((bx + 26 * S, by + 36 * S, bx + bk.width, by + bk.height + 8 * S), fill=190)
         img.paste(P["shadow"] + (255,), mask=sh.filter(ImageFilter.GaussianBlur(24 * S)))
         img.alpha_composite(bk, (bx, by))
+
+    # launch discount sticker
+    R = 128 * S
+    st = Image.new("RGBA", (2 * R + 20 * S, 2 * R + 20 * S), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(st)
+    c = st.width / 2
+    sd.ellipse((c - R, c - R, c + R, c + R), fill=P["emph_text"])
+    sd.ellipse((c - R + 12 * S, c - R + 12 * S, c + R - 12 * S, c + R - 12 * S), outline=(34, 24, 20), width=4 * S)
+    for txt, fs, yy in (("LANSMANA ÖZEL", 30, -72), ("%20", 104, -42), ("İNDİRİM", 38, 56)):
+        f_ = F(BEBAS, fs)
+        tw = sd.textlength(txt, font=f_)
+        sd.text((c - tw / 2, c + yy * S), txt, font=f_, fill=(34, 24, 20))
+    st = st.rotate(12, expand=True, resample=Image.BICUBIC)
+    img.alpha_composite(st, (int(W - st.width - 10 * S), int(850 * S)))
     body(img, P, [("Ölçüler, yapılış, bar sırları ve evde kokteyl rehberi:", 0), ("shopier.com/konusankokteyller", 1)], 1150 * S, 48)
     save(img, f"{prefix}_08.jpg")
 
