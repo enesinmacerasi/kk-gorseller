@@ -29,7 +29,7 @@
     {
       "cocktail": "Daiquiri",
       "palette": "komur",
-      "folder": "daiquiri/v4",
+      "folder": "daiquiri/v5",
       "slot": "2026-11-28 20:30",
       "script": "pipeline/carousel/daiquiri.py + dq_cover.py",
       "series_no": 4,
