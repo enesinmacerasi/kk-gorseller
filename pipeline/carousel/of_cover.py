@@ -93,7 +93,7 @@ d.polygon([(330 * S, by1 - 4 * S), (420 * S, 795 * S), (450 * S, by1 - 4 * S)], 
 wobble(d, [(330 * S, by1), (420 * S, 795 * S), (450 * S, by1)], (20, 18, 16), 5 * S, jitter=2, passes=2)
 d.rounded_rectangle((bx0, by0, bx1, by1), radius=60 * S, outline=(20, 18, 16), width=6 * S)
 d.line((336 * S, by1 - 3 * S, 444 * S, by1 - 3 * S), fill=P["text"], width=10 * S)
-L1, L2 = "ADIMI ESKİ KAFALI", "MÜŞTERİLER KOYDU."
+L1, L2 = "KOKTEYLİN İLK", "TARİFİ BENİM."
 f1 = fit(d, L1, 130, 840 * S); f2 = fit(d, L2, 130, 840 * S)
 f = f1 if f1.size < f2.size else f2
 d.text((120 * S, 205 * S), L1, font=f, fill=(34, 24, 20))

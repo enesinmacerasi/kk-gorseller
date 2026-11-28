@@ -38,11 +38,11 @@
     {
       "cocktail": "Old Fashioned",
       "palette": "bordo",
-      "folder": "old-fashioned/v2",
+      "folder": "old-fashioned/v3",
       "slot": "2026-11-29 13:30",
       "script": "pipeline/carousel/oldfashioned.py + of_cover.py",
       "series_no": 5,
-      "hook": "Adımı eski kafalı müşteriler koydu.",
+      "hook": "Kokteylin ilk tarifi benim.",
       "buffer_id": "6b0a80fcd718580fbd691653"
     }
   ],
