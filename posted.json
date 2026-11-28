@@ -39,7 +39,7 @@
     {
       "cocktail": "Old Fashioned",
       "palette": "bordo",
-      "folder": "old-fashioned/v5",
+      "folder": "old-fashioned/v6",
       "slot": "2026-11-29 13:30",
       "script": "pipeline/carousel/oldfashioned.py + of_cover.py",
       "series_no": 5,
@@ -74,6 +74,6 @@
       "q": "Profilde öne çıkan hikâyelere 100 Klasik Kokteyl'den ücretsiz bi örnek sayfa koyalım mı?"
     }
   ],
-  "notes": "Kapak kuralı: konuşma balonlu kapak. Örnekler: pipeline/carousel/ng_cover.py (kömür), mg_cover.py (bordo). Gövde sayfaları: negroni.py (kömür), margarita.py (bordo). Enes notu (28.11): kapak kancası tek okumada anlaşılır olmalı; 'Yeniliklere kızanlar beni eski usul istedi' anlaşılmadı. 8. sayfada 'Lansmana özel %20 indirim' etiketi var (kk.py), Enes kaldır diyene kadar kalsın.",
+  "notes": "KAPAK ŞABLONLARI (yeni, ilgi çekici format): kömür palette pipeline/carousel/dq_cover2.py, bordo palette of_cover2.py. Gövde sayfaları: negroni.py (kömür), margarita.py (bordo). 8. sayfada 'Lansmana özel %20 indirim' etiketi var (kk.py), Enes kaldır diyene kadar kalsın.",
   "next_series_no": 6
 }
