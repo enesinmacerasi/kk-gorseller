@@ -22,7 +22,8 @@
       "folder": "margarita/v3",
       "slot": "2026-11-28 12:30",
       "script": "pipeline/carousel/margarita.py",
-      "series_no": 3
+      "series_no": 3,
+      "buffer_id": "6b09c522446d2e47aaaa0a32"
     },
     {
       "cocktail": "Old Fashioned",
@@ -31,7 +32,8 @@
       "slot": "2026-11-28 20:30",
       "script": "pipeline/carousel/oldfashioned.py + of_cover.py",
       "series_no": 4,
-      "hook": "Yeniliklere kızanlar beni eski usul istedi."
+      "hook": "Yeniliklere kızanlar beni eski usul istedi.",
+      "buffer_id": "6b0a80fcd718580fbd691653"
     },
     {
       "cocktail": "Daiquiri",
@@ -40,7 +42,8 @@
       "slot": "2026-11-29 13:30",
       "script": "pipeline/carousel/daiquiri.py + dq_cover.py",
       "series_no": 5,
-      "hook": "Adımı bir maden kasabasından aldım."
+      "hook": "Adımı bir maden kasabasından aldım.",
+      "buffer_id": "6b0a80fcd7e53b12ebe8417c"
     }
   ],
   "next_palette": "komur",
