@@ -134,17 +134,18 @@ for i in range(46):
     rr = r.uniform(2.5, 5) * S
     d.rectangle((x - rr, y - rr, x + rr, y + rr), fill=(250, 246, 238))
 # speech bubble
-bx0, by0, bx1, by1 = 70 * S, 200 * S, 1010 * S, 560 * S
+bx0, by0, bx1, by1 = 70 * S, 245 * S, 1010 * S, 520 * S
 d.rounded_rectangle((bx0, by0, bx1, by1), radius=60 * S, fill=P["text"])
 d.polygon([(330 * S, by1 - 4 * S), (400 * S, 760 * S), (450 * S, by1 - 4 * S)], fill=P["text"])
 wobble(d, [(330 * S, by1), (400 * S, 760 * S), (450 * S, by1)], (34, 24, 20), 5 * S, jitter=2, passes=2)
 d.rounded_rectangle((bx0, by0, bx1, by1), radius=60 * S, outline=(34, 24, 20), width=6 * S)
 d.line((336 * S, by1 - 3 * S, 444 * S, by1 - 3 * S), fill=P["text"], width=10 * S)
-L1, L2 = "BİRİ YANLIŞ ŞİŞEYİ KAPTI,", "BEN DOĞDUM."
+L1, L2 = "BEN MARGARITA'YIM.", "BARMEN YANLIŞ ŞİŞEYİ KULLANDI."
 sz = 140
-while d.textlength(L1, font=F(BEBAS, sz)) > 840 * S: sz -= 4
-d.text((120 * S, 240 * S), L1, font=F(BEBAS, sz), fill=(34, 24, 20))
-d.text((120 * S, 390 * S), L2, font=F(BEBAS, sz), fill=(170, 50, 50))
+while max(d.textlength(L1, font=F(BEBAS, sz)), d.textlength(L2, font=F(BEBAS, sz))) > 840 * S: sz -= 4
+lh = int(sz * S * 1.02); y1 = int(372 * S - lh)
+d.text((120 * S, y1), L1, font=F(BEBAS, sz), fill=(34, 24, 20))
+d.text((120 * S, y1 + lh), L2, font=F(BEBAS, sz), fill=(170, 50, 50))
 tag = "KONUŞAN KOKTEYL #3"; ft = F(BEBAS, 44)
 d.text((W - MX - d.textlength(tag, font=ft), 110 * S), tag, font=ft, fill=P["num"])
 wordmark(img, MX, H - 230 * S, 150 * S, *P["logo"])

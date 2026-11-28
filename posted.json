@@ -19,12 +19,12 @@
     {
       "cocktail": "Margarita",
       "palette": "bordo",
-      "folder": "margarita/v4",
+      "folder": "margarita/v5",
       "slot": "2026-11-28 12:30",
       "script": "pipeline/carousel/margarita.py",
       "series_no": 3,
       "buffer_id": "6b09c522446d2e47aaaa0a32",
-      "hook": "Biri yanlış şişeyi kaptı, ben doğdum."
+      "hook": "Ben Margarita'yım. Barmen yanlış şişeyi kullandı."
     },
     {
       "cocktail": "Daiquiri",
