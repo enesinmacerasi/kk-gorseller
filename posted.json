@@ -30,7 +30,7 @@
       "cocktail": "Daiquiri",
       "palette": "komur",
       "folder": "daiquiri/v6",
-      "slot": "2026-11-28 20:30",
+      "slot": "2026-11-28 19:00 (öne çekildi)",
       "script": "pipeline/carousel/daiquiri.py + dq_cover.py",
       "series_no": 4,
       "hook": "Adımı bir maden kasabasından aldım.",
@@ -45,11 +45,20 @@
       "series_no": 5,
       "hook": "Kokteylin atası benim.",
       "buffer_id": "6b0a80fcd718580fbd691653"
+    },
+    {
+      "cocktail": "Mojito",
+      "palette": "komur",
+      "folder": "mojito/v1",
+      "slot": "2026-11-28 21:30",
+      "script": "pipeline/carousel/mj_cover2.py + mj_bold.py + mj_recipe.py (mj_art.py)",
+      "series_no": 6,
+      "hook": "Bir korsanın ilacıydım.",
+      "buffer_id": "6b0af2f479d323bf648fe9b4"
     }
   ],
-  "next_palette": "komur",
+  "next_palette": "bordo",
   "queue_ideas": [
-    "Mojito",
     "Espresso Martini",
     "Aperol Spritz",
     "Whiskey Sour",
@@ -75,5 +84,5 @@
     }
   ],
   "notes": "KAPAK: kömür dq_cover2.py, bordo of_cover2.py. İÇ SAYFALAR 2-6: bold.py motoru; örnekler dq_bold.py (kömür), of_bold.py (bordo). 7. sayfa tarif kartı: negroni.py/margarita.py içindeki recipe. 8. sayfa kk.py ('Lansmana özel %20 indirim' etiketi, Enes kaldır diyene kadar).",
-  "next_series_no": 6
+  "next_series_no": 7
 }
