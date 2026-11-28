@@ -3,7 +3,7 @@ import kk
 from kk import *
 from styles import wobble, sk_rect, sk_ellipse
 
-P = PALETTES["komur"]
+P = PALETTES["bordo"]
 INKC = kk.INK
 pre = "OF"
 
@@ -93,12 +93,12 @@ d.polygon([(330 * S, by1 - 4 * S), (420 * S, 795 * S), (450 * S, by1 - 4 * S)], 
 wobble(d, [(330 * S, by1), (420 * S, 795 * S), (450 * S, by1)], (20, 18, 16), 5 * S, jitter=2, passes=2)
 d.rounded_rectangle((bx0, by0, bx1, by1), radius=60 * S, outline=(20, 18, 16), width=6 * S)
 d.line((336 * S, by1 - 3 * S, 444 * S, by1 - 3 * S), fill=P["text"], width=10 * S)
-L1, L2 = "YENİLİKLERE KIZANLAR", "BENİ ESKİ USUL İSTEDİ."
+L1, L2 = "ADIMI ESKİ KAFALI", "MÜŞTERİLER KOYDU."
 f1 = fit(d, L1, 130, 840 * S); f2 = fit(d, L2, 130, 840 * S)
 f = f1 if f1.size < f2.size else f2
-d.text((120 * S, 205 * S), L1, font=f, fill=(28, 26, 24))
-d.text((120 * S, 345 * S), L2, font=f, fill=(110, 150, 40))
-tag = "KONUŞAN KOKTEYL #4"; ft = F(BEBAS, 44)
+d.text((120 * S, 205 * S), L1, font=f, fill=(34, 24, 20))
+d.text((120 * S, 345 * S), L2, font=f, fill=(170, 50, 50))
+tag = "KONUŞAN KOKTEYL #5"; ft = F(BEBAS, 44)
 d.text((W - MX - d.textlength(tag, font=ft), 110 * S), tag, font=ft, fill=P["num"])
 wordmark(img, MX, H - 230 * S, 150 * S, *P["logo"])
 fn = F(BEBAS, 72)

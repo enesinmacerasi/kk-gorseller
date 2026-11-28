@@ -4,7 +4,7 @@ import hybrid
 from kk import *
 from styles import wobble, sk_rect, sk_ellipse
 
-P = PALETTES["bordo"]
+P = PALETTES["komur"]
 INKC = kk.INK
 pre = "DQ"
 
@@ -209,8 +209,8 @@ L1, L2 = "ADIMI BİR MADEN", "KASABASINDAN ALDIM."
 f1 = fit(d, L1, 130, 840 * S); f2 = fit(d, L2, 130, 840 * S)
 f = f1 if f1.size < f2.size else f2
 d.text((120 * S, 205 * S), L1, font=f, fill=(34, 24, 20))
-d.text((120 * S, 345 * S), L2, font=f, fill=(170, 50, 50))
-tag = "KONUŞAN KOKTEYL #5"; ft = F(BEBAS, 44)
+d.text((120 * S, 345 * S), L2, font=f, fill=(110, 150, 40))
+tag = "KONUŞAN KOKTEYL #4"; ft = F(BEBAS, 44)
 d.text((W - MX - d.textlength(tag, font=ft), 110 * S), tag, font=ft, fill=P["num"])
 wordmark(img, MX, H - 230 * S, 150 * S, *P["logo"])
 fn = F(BEBAS, 72)

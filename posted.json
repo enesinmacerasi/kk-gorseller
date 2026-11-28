@@ -26,24 +26,24 @@
       "buffer_id": "6b09c522446d2e47aaaa0a32"
     },
     {
-      "cocktail": "Old Fashioned",
-      "palette": "komur",
-      "folder": "old-fashioned/v1",
-      "slot": "2026-11-28 20:30",
-      "script": "pipeline/carousel/oldfashioned.py + of_cover.py",
-      "series_no": 4,
-      "hook": "Yeniliklere kızanlar beni eski usul istedi.",
-      "buffer_id": "6b0a80fcd718580fbd691653"
-    },
-    {
       "cocktail": "Daiquiri",
-      "palette": "bordo",
-      "folder": "daiquiri/v1",
-      "slot": "2026-11-29 13:30",
+      "palette": "komur",
+      "folder": "daiquiri/v2",
+      "slot": "2026-11-28 20:30",
       "script": "pipeline/carousel/daiquiri.py + dq_cover.py",
-      "series_no": 5,
+      "series_no": 4,
       "hook": "Adımı bir maden kasabasından aldım.",
       "buffer_id": "6b0a80fcd7e53b12ebe8417c"
+    },
+    {
+      "cocktail": "Old Fashioned",
+      "palette": "bordo",
+      "folder": "old-fashioned/v2",
+      "slot": "2026-11-29 13:30",
+      "script": "pipeline/carousel/oldfashioned.py + of_cover.py",
+      "series_no": 5,
+      "hook": "Adımı eski kafalı müşteriler koydu.",
+      "buffer_id": "6b0a80fcd718580fbd691653"
     }
   ],
   "next_palette": "komur",
@@ -73,6 +73,6 @@
       "q": "Profilde öne çıkan hikâyelere 100 Klasik Kokteyl'den ücretsiz bi örnek sayfa koyalım mı?"
     }
   ],
-  "notes": "Kapak kuralı: konuşma balonlu kapak. Örnekler: pipeline/carousel/ng_cover.py (kömür), mg_cover.py (bordo). Gövde sayfaları: negroni.py (kömür), margarita.py (bordo).",
+  "notes": "Kapak kuralı: konuşma balonlu kapak. Örnekler: pipeline/carousel/ng_cover.py (kömür), mg_cover.py (bordo). Gövde sayfaları: negroni.py (kömür), margarita.py (bordo). Enes notu (28.11): kapak kancası tek okumada anlaşılır olmalı; 'Yeniliklere kızanlar beni eski usul istedi' anlaşılmadı.",
   "next_series_no": 6
 }

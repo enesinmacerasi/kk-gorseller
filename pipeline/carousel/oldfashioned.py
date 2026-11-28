@@ -3,7 +3,7 @@ import kk
 from kk import *
 from styles import wobble, sk_rect, sk_ellipse
 
-P = PALETTES["komur"]
+P = PALETTES["bordo"]
 INKC = kk.INK
 pre = "OF"
 
@@ -129,5 +129,5 @@ def recipe(n, w, h):
 
 card(img, P, recipe, W // 2, 730 * S, 900 * S, 1080 * S, -1.5)
 save(img, f"{pre}_07.jpg")
-shutil.copy("KK_komur_08.jpg", f"{pre}_08.jpg")
+shutil.copy("KK_bordo_08.jpg", f"{pre}_08.jpg")
 print("ok")
