@@ -199,17 +199,18 @@ for (x, y, r) in [(-70, 120, 7), (5, 128, 6), (-50, 100, 5), (20, 112, 5)]:
 for a in (-0.5, 0, 0.5):
     cx, cy = 830 * S, 610 * S
     wobble(d, [(cx + 10 * S * math.cos(a), cy + 30 * S * math.sin(a)), (cx + 55 * S * math.cos(a), cy + 55 * S * math.sin(a))], P["num"], 5 * S, jitter=1, passes=1)
-bx0, by0, bx1, by1 = 70 * S, 175 * S, 1010 * S, 500 * S
+bx0, by0, bx1, by1 = 70 * S, 168 * S, 1010 * S, 590 * S
 d.rounded_rectangle((bx0, by0, bx1, by1), radius=60 * S, fill=P["text"])
 d.polygon([(300 * S, by1 - 4 * S), (380 * S, 795 * S), (420 * S, by1 - 4 * S)], fill=P["text"])
 wobble(d, [(300 * S, by1), (380 * S, 795 * S), (420 * S, by1)], (34, 24, 20), 5 * S, jitter=2, passes=2)
 d.rounded_rectangle((bx0, by0, bx1, by1), radius=60 * S, outline=(34, 24, 20), width=6 * S)
 d.line((306 * S, by1 - 3 * S, 414 * S, by1 - 3 * S), fill=P["text"], width=10 * S)
 L1, L2 = "ADIMI BİR MADEN", "KASABASINDAN ALDIM."
-f1 = fit(d, L1, 130, 840 * S); f2 = fit(d, L2, 130, 840 * S)
+f1 = fit(d, L1, 122, 840 * S); f2 = fit(d, L2, 122, 840 * S)
 f = f1 if f1.size < f2.size else f2
-d.text((120 * S, 205 * S), L1, font=f, fill=(34, 24, 20))
-d.text((120 * S, 345 * S), L2, font=f, fill=(110, 150, 40))
+d.text((120 * S, 192 * S), "BEN DAIQUIRI.", font=F(BEBAS, 84), fill=(150, 60, 50))
+d.text((120 * S, 290 * S), L1, font=f, fill=(34, 24, 20))
+d.text((120 * S, 425 * S), L2, font=f, fill=(110, 150, 40))
 tag = "KONUŞAN KOKTEYL #4"; ft = F(BEBAS, 44)
 d.text((W - MX - d.textlength(tag, font=ft), 110 * S), tag, font=ft, fill=P["num"])
 wordmark(img, MX, H - 230 * S, 150 * S, *P["logo"])
